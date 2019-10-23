@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  div.container
+    div#info-input-block.input-block
+      h2 上传source map
+      input#uploader(type="file")
+      div.block-input
+        input#row(placeholder="row")
+      div.block-input
+        input#column(placeholder="column")
+      div.block-input
+        button#submit 确认
+    div.result-block
+      h2 解析结果
+      p 文件名:
+        span#result-component
+      p 行:
+        span#result-row
+      p 列:
+        span#result-column
+
+  script(type="module",src="/javascripts/index.js")

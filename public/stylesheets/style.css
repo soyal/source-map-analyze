@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.block-input {
+  margin-top: 15px;
+}
+
+.container {
+  display: flex;
+}
+.input-block {
+  flex-basis: 25%;
+}
+.result-block {
+  flex-basis: 75%;
+}
